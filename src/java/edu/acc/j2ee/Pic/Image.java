@@ -23,7 +23,7 @@ public class Image extends HttpServlet {
 
      
        
-        String filename = "C:/uploads/castle.jpeg";
+        String filename = "C:/uploads/";
     
        String name = FilenameUtils.getBaseName(filename);
         String extension = FilenameUtils.getExtension(filename);
