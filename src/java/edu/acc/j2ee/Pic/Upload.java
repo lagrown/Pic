@@ -52,7 +52,7 @@ public class Upload extends HttpServlet {
 
                         getServletContext().getInitParameter("UPLOAD_DIRECTORY");
                         
-                      
+                        request.setAttribute("filename", name);
 
                     }
                     

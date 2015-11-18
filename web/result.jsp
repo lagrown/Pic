@@ -32,7 +32,9 @@
             
             <h2>${initParam.UPLOAD_DIRECTORY}</h2>
             
-            <img src="images">
+           
+            <img src="images?image=${filename}">
+            
             
          
             

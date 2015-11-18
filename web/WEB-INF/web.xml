@@ -28,9 +28,6 @@
     <servlet>
         <servlet-name>Upload</servlet-name>
         <servlet-class>edu.acc.j2ee.Pic.Upload</servlet-class>
-        
-       
-       
     </servlet>
     
    
@@ -46,40 +43,23 @@
     </context-param>
     
      
-    
-    
-    
-     <servlet>
+      
+    <servlet>
         <servlet-name>Image</servlet-name>
         <servlet-class>edu.acc.j2ee.Pic.Image</servlet-class>
-        
     </servlet>
     
-   
     <servlet-mapping>
         <servlet-name>Image</servlet-name>
         <url-pattern>/images</url-pattern>
     </servlet-mapping>
     
-     <context-param>
-            <param-name>filename</param-name>
-            <param-value>C:/uploads</param-value>
-        </context-param>
-        
-         <context-param>
-            <param-name>mime</param-name>
-            <param-value>jpeg, jpg, gif, png</param-value>
-        </context-param>
-    
+       
     
     
   
     
-  
-    
-  
-    
-    
+ 
     <welcome-file-list>
         <welcome-file>main</welcome-file>
     </welcome-file-list>
