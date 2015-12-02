@@ -7,11 +7,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>A little about this site</title>
     </head>
-    <body>
+    
          <body style = "background-color: bisque ">
         <a href="main?content">Home</a>|
          <a href="main?uploader">Upload Images</a> |
-         <a href="main?result">View Images</a> |
+         <a href="view">View Images</a> |
           <a href="main?logout">Log out</a>
         
          &nbsp;

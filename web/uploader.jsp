@@ -10,11 +10,11 @@
 
   
 
-  <body>
+  
        <body style = "background-color: bisque ">
         <a href="main?content">Home</a>|
        <a href="main?about">About</a> |
-        <a href="main?result">View Images</a> |
+        <a href="view">View Images</a> |
          <a href="main?logout">Log out</a>
         
 

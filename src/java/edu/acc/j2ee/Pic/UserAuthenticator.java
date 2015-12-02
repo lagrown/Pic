@@ -12,8 +12,8 @@ public class UserAuthenticator{
 	
 	public boolean authenticate (UserBean user){
 		if(user == null || user.getName() == null || user.getPassword() == null)
-			return false;
-		if (user.getName().equals(sc.getInitParameter("validUserName")) &&
+                return false;
+                 if (user.getName().equals(sc.getInitParameter("validUserName")) &&
 			user.getPassword().equals(sc.getInitParameter("validPassword"))) {
 			
 			return true;
