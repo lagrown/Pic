@@ -8,7 +8,9 @@
 body {
     background-image: url("http://www.pinoy7.com/psptutorials/7/textcutout/images/img1.gif");
 }
- 
+h2{
+    color: red;
+}
 </style>
     </head>
     <body>

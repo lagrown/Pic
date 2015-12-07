@@ -13,11 +13,7 @@ body {
 p{ font-size: 28px;
    
 }
-blockquote{ text-align: center;
-    padding-top: 50px;
-font-style: italic;
-color: #580000;
-}
+
 h1{ text-align: center;
 }
  
@@ -44,6 +40,8 @@ li a:hover:not(.active) {
 .active {
 background-color:#980000 ;
 }
+
+
 </style>
 </head>
 <body>
@@ -56,24 +54,29 @@ background-color:#980000 ;
         
          <ul>
              <li><a class="active"<a href="main?content">Home</a></li>
-            <li> <a href="main?about">About</a> |</li>
-            <li> <a href="main?uploader">Upload Images</a> |</li>
-            <li><a href="view">View Images</a> |</li>
+            <li> <a href="main?about">About</a> </li>
+            <li> <a href="main?uploader">Upload Images</a> </li>
+            <li><a href="view">View Images</a> </li>
             <li> <a href="main?logout">Log out</a></li>
         
         </ul>
                           
          <p style ="text-align: center; color: maroon">Photo Album</p>
-         <p>Welcome ${user.name}!</p>
+         <p>Welcome ${user.name}! Navigate the menu bar above to upload and view images.</p>
+         
+         
+         
         
       
-     
+         <img src="http://i.telegraph.co.uk/multimedia/archive/02551/fuji_2551323b.jpg">
  
         
         
        
         
 	</body>
+        
+
 	
 	
 </html>

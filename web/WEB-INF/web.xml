@@ -9,7 +9,7 @@
         </init-param>
         <init-param>
             <param-name>validPassword</param-name>
-            <param-value>x</param-value>
+            <param-value>takashima</param-value>
         </init-param>
     </servlet>
     <servlet>

@@ -15,15 +15,10 @@ body {
 }
 p{ font-size: 18px;
    padding-top: 50px;
+   padding-right: 50px;
+   padding-left: 50px;
 }
-blockquote{ text-align: center;
-    padding-top: 50px;
-font-style: italic;
-color: #580000;
-}
-h1{ text-align: center;
-}
- 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -53,9 +48,9 @@ background-color:#980000 ;
     
     <ul>
              <li><a class="active"<a href="main?content">Home</a></li>
-            <li> <a href="main?about">About</a> |</li>
-            <li> <a href="main?uploader">Upload Images</a> |</li>
-            <li><a href="view">View Images</a> |</li>
+            <li> <a href="main?about">About</a> </li>
+            <li> <a href="main?uploader">Upload Images</a> </li>
+            <li><a href="view">View Images</a> </li>
             <li> <a href="main?logout">Log out</a></li>
         
         </ul>

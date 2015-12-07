@@ -17,13 +17,6 @@ body {
 }
 p{ font-size: 18px;
 }
-blockquote{ text-align: center;
-    padding-top: 50px;
-font-style: italic;
-color: #580000;
-}
-h1{ text-align: center;
-}
  
 ul {
     list-style-type: none;
@@ -61,10 +54,10 @@ div{
 
   
     <ul>
-             <li><a class="active"<a href="main?content">Home</a></li>
-            <li> <a href="main?about">About</a> |</li>
-            <li> <a href="main?uploader">Upload Images</a> |</li>
-            <li><a href="view">View Images</a> |</li>
+        <li>  <a class="active"<a href="main?content">Home</a></li>
+            <li> <a href="main?about">About</a> </li>
+            <li> <a href="main?uploader">Upload Images</a> </li>
+            <li><a href="view">View Images</a> </li>
             <li> <a href="main?logout">Log out</a></li>
         
         </ul>
@@ -72,13 +65,13 @@ div{
         <div>
 
             <h3> Choose Photo to upload </h3>
-
+           
             <form action="upload" method="post" enctype="multipart/form-data">
+                 
+                     <input type="file" name="file" >
 
-                <input type="file" name="file" />
-
-                <input type="submit" value="upload" />
-
+                     <input type="submit" value="upload" >
+                 
             </form>         
 
         </div>

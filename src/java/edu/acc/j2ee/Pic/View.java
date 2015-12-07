@@ -18,6 +18,11 @@ public class View extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String UPLOAD_DIRECTORY = "C:/uploads";
+        File fileSaveDir = new File(UPLOAD_DIRECTORY);
+        if (!fileSaveDir.exists()) {
+            fileSaveDir.mkdir();
+        }
         String file = "C:/uploads/";
 
         List imageList = new ArrayList();
@@ -26,13 +31,11 @@ public class View extends HttpServlet {
             String imagefileName = imageFile.getName();
 
             imageList.add(imagefileName);
-        
+
         }
         request.setAttribute("imageList", imageList);
 
         request.getRequestDispatcher("/view.jsp").forward(request, response);
 
-       
-        }
     }
-
+}

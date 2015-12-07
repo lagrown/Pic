@@ -13,35 +13,32 @@ public class Login extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String destination = " login.jsp, content.jsp";
+        String destination = "login.jsp";
         HttpSession session = request.getSession();
         String user = request.getParameter("user");
         String pass = request.getParameter("pass");
         UserBean bean = new UserBean(user, pass);
         ServletConfig sc = getServletConfig();
-try{
+
         if (request.getParameter("login") != null) {
             if (UserValidator.validate(bean)) {
                 UserAuthenticator ua = new UserAuthenticator(sc);
                 if (ua.authenticate(bean)) {
                     session.setAttribute("user", bean);
                     destination = "content.jsp";
-                } 
-
-            } else if (request.getParameter("content") != null) {
-
-            }
-        }
-        }catch(Exception e){
-            request.setAttribute("message" ,e);
-        }
-        request.getRequestDispatcher(destination).forward(request, response);
-    }
+                } else request.setAttribute("message", "Access Denied");
+		}
+		else request.setAttribute("message", "One or more fields are invalid");
+		request.getRequestDispatcher(destination).forward(request, response);			
+	}
+}
+        
+    
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String destination = "login.jsp, content.jsp, uploader.jsp, result.jsp, about.jsp, view";
+        String destination = "login.jsp, content.jsp, uploader.jsp, result.jsp, about.jsp, view.jsp";
 
         HttpSession session = request.getSession();
         UserBean bean = (UserBean) session.getAttribute("user");

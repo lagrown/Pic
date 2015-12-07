@@ -62,9 +62,9 @@ background-color:#980000 ;
              
            <ul>
              <li><a class="active"<a href="main?content">Home</a></li>
-            <li> <a href="main?about">About</a> |</li>
-            <li> <a href="main?uploader">Upload Images</a> |</li>
-            <li><a href="view">View Images</a> |</li>
+            <li> <a href="main?about">About</a> </li>
+            <li> <a href="main?uploader">Upload Images</a> </li>
+            <li><a href="view">View Images</a> </li>
             <li> <a href="main?logout">Log out</a></li>
         
         </ul>  
@@ -76,7 +76,7 @@ background-color:#980000 ;
          
          
              <c:forEach var="imageFile" items="${imageList}">
-                 <img src ="images?image=${imageFile}" style="width:304px;height:228px;" alt="pic" >
+                 <img src ="images?image=${imageFile}" style="width:350px;height:250px;" alt="pic" >
                 </c:forEach>
         
    
