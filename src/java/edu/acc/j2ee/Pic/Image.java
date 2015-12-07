@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 
@@ -30,18 +29,15 @@ public class Image extends HttpServlet {
             int length;
             while ((length = in.read(buffer)) >= 0) {
                 out.write(buffer, 0, length);
-               
+
             }
             out.close();
             in.close();
 
         } catch (Exception e) {
             request.setAttribute("message", e);
-        } 
+        }
 
-        
-          
-
-    } 
+    }
 
 }

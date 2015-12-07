@@ -3,28 +3,70 @@
     "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  
-    <head><title>Content Page</title></head>
-    <body style ="background-color:beige ">
+  
+ <head>
+<style>
+body {
+    background-image: url("http://www.pinoy7.com/psptutorials/7/textcutout/images/img1.gif") ;
+ 
+}
+p{ font-size: 28px;
+   
+}
+blockquote{ text-align: center;
+    padding-top: 50px;
+font-style: italic;
+color: #580000;
+}
+h1{ text-align: center;
+}
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+       overflow: hidden;
+    background-color: #404040   ;
+}
+li {
+    float: left;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+background-color:#980000 ;
+}
+</style>
+</head>
+<body>
         
+  
+	
+        
+	
        
-	<h1 style = "text-align:center; color:maroon">Photo Album</h1>
         
-	<p>Welcome ${user.name}!</p>
-            &nbsp;
-                &nbsp;
-                    &nbsp;    
-                        &nbsp;
-                            &nbsp;
+         <ul>
+             <li><a class="active"<a href="main?content">Home</a></li>
+            <li> <a href="main?about">About</a> |</li>
+            <li> <a href="main?uploader">Upload Images</a> |</li>
+            <li><a href="view">View Images</a> |</li>
+            <li> <a href="main?logout">Log out</a></li>
         
-        <a href="main?about">About</a> |
-        <a href="main?uploader">Upload Images</a> |
-        <a href="view">View Images</a> |
-         <a href="main?logout">Log out</a>
+        </ul>
+                          
+         <p style ="text-align: center; color: maroon">Photo Album</p>
+         <p>Welcome ${user.name}!</p>
         
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        
+      
      
  
         

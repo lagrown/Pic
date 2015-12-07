@@ -2,9 +2,16 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head><title>Family Login</title></head>
+    <head><title>Family Login</title>
 	
-    <body style = "background-color: bisque ">
+    <style>
+body {
+    background-image: url("http://www.pinoy7.com/psptutorials/7/textcutout/images/img1.gif");
+}
+ 
+</style>
+    </head>
+    <body>
 	<h1>Log in</h1>
 	
          <form method="POST" action="main">
