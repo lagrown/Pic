@@ -64,7 +64,7 @@ div{
 
         <div>
 
-            <h3> Choose Photo to upload </h3>
+            <h3> Choose a Photo to upload </h3>
            
             <form action="upload" method="post" enctype="multipart/form-data">
                  

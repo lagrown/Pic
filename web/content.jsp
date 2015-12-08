@@ -7,8 +7,8 @@
  <head>
 <style>
 body {
-    background-image: url("http://www.pinoy7.com/psptutorials/7/textcutout/images/img1.gif") ;
- 
+    background-image: url("http://www.pinoy7.com/psptutorials/7/textcutout/images/img1.gif");
+    
 }
 p{ font-size: 28px;
    
@@ -47,11 +47,6 @@ background-color:#980000 ;
 <body>
         
   
-	
-        
-	
-       
-        
          <ul>
              <li><a class="active"<a href="main?content">Home</a></li>
             <li> <a href="main?about">About</a> </li>
@@ -68,7 +63,7 @@ background-color:#980000 ;
          
         
       
-         <img src="http://i.telegraph.co.uk/multimedia/archive/02551/fuji_2551323b.jpg">
+         <img src="http://i.telegraph.co.uk/multimedia/archive/02551/fuji_2551323b.jpg" >
  
         
         
